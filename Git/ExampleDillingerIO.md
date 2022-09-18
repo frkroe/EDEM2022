@@ -3,7 +3,7 @@
 # **Master en Data Analytics para la Empresa**
 ## Llega pronto a lo que muchos llegarán tarde.
 
-![Solicitud de Admisión](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2997999/settings_images/vMRwG6ncSehUj7LkVNlK_Inscribete_ahora.png)(https://inscripcion.edem.eu/master-data-analytics)
+[![Solicitud de Admisión](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2997999/settings_images/vMRwG6ncSehUj7LkVNlK_Inscribete_ahora.png)](https://inscripcion.edem.eu/master-data-analytics)
 |  |  |
 | ------ | ---
 | Título | Elaborado e impartido de forma privada por EDEM |
