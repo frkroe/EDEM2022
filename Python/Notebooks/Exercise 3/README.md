@@ -45,7 +45,7 @@ If you get an error due to size limitations please follow this steps:
 
 ```
 docker exec -it zeppelin /bin/bash
-cd /etc/zeppelin/conf/
+cd /etc/zeppelin/conf/cd 
 sudo cp zeppelin-site.xml.template zeppelin-site.xml
 sudo vim zeppelin-site.xml
 ```
