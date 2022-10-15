@@ -1,0 +1,9 @@
+#crear imagen con ejecución de git version
+FROM ubuntu:18.04
+
+RUN apt-get update
+RUN apt-get install -y git
+
+# CMD para poder sobreescribir con "run -it imageid comando"
+#CMD git --version
+ENTRYPOINT git --version

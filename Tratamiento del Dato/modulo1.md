@@ -1,0 +1,30 @@
+### Clase de 13.10.2022
+
+# Módulo 1
+
+## Data Arquitectura
+- Ingestión de datos
+- dentro de la plataforma:
+    1. capa datos raw (= en bruta) (datos básicos)
+    2. capa enterprise
+    3. capa de aplicación
+    - con repositorio de datos y otros servicios del platafroma (sequridad, calidad, ...)
+
+##  1° Fase tradicional (Arquitectura de DATA PROJECT 1)
+1. origen del problema (gobierno, calidad)
+2. ingestionar datos
+3. procesar datos
+4. visualizar datos
+- y Blockchain
+
+## 2° Fase de BigData/ Streaming (Arquitectura de DATA PROJECT 2)
+1. kafka: mensajería
+2. spark streaming: procesar datos en tiempo real
+3. flask: visualizar datos
+4. concepto open data
+- y dotGis
+
+## 3° Fase de Cloud (Arquitectura de DATA PROJECT 2)
+1. introduccion al cloud
+2. como hacer las tareas del fase anterior (streaming, mensajeria, ...) en la cloud
+3. certificacion de azure
