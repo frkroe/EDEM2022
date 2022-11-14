@@ -6,7 +6,6 @@ global client
 listaClientes = []
 client = {}
 
-
 ### Definición preferente: bool
 def vip():
   isTrue = True
@@ -23,26 +22,24 @@ def retoA11():
 (4) Listar TODOS los clientes
 (5) Mostrar ÚNICAMENTE los clientes preferentes
 (6) Finalizar Programa''')
+while True:
   option = int(input("Introduce el número adecuado: "))
-  while (option): 
-    if (option == 1):
-      addClient()
-      #break
-    elif (option == 2):
-      deleteClient()
-      #break
-    elif (option == 3):
-      showClient()
-    elif (option == 4):
-      listAll()
-      #break
-    elif (option == 5):
-      showVIP()
-    elif (option == 6):
-      print('Hasta luego!')
-      exit()
-    else: 
-      option = int(input("Introduce sólo un número de 1 a 6: "))
+  if (option == 1):
+    addClient()
+  elif (option == 2):
+    deleteClient()
+  elif (option == 3):
+    showClient()
+  elif (option == 4):
+    listAll()
+  elif (option == 5):
+    showVIP()
+  elif (option == 6):
+    print('Hasta luego!')
+    break
+    #exit()
+  else: 
+    option = int(input("Introduce sólo un número de 1 a 6: "))
 
 ### (1) Añadir un cliente
 def addClient():
