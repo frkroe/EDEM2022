@@ -1,0 +1,80 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a sample server sensor server for Robots."
+  version: "1.0.0"
+  title: "Swagger Robot Sensor 2.0"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost"
+basePath: "/v2"
+tags:
+- name: "temperature"
+  description: "Everything about your robot temperature measured by sensors"
+schemes:
+- "https"
+- "http"
+paths:
+  /getLastMeassureBySensor/{sensor}:
+    get:
+      tags:
+      - "temperature"
+      summary: "Get last measure from sensor"
+      description: "Jet last measure by sensor."
+      operationId: "get_last_measure_by_sensor"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "sensor"
+        in: "path"
+        description: "name of sensor"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Measure"
+        default:
+          description: "Invalid request"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Message"
+      x-swagger-router-controller: "swagger_server.controllers.temperature_controller"
+definitions:
+  Measure:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+      fechamuestreo:
+        type: "string"
+      unidad:
+        type: "string"
+      medicion:
+        type: "number"
+      tipo:
+        type: "string"
+    example:
+      unidad: "unidad"
+      medicion: 0.80082819046101150206595775671303272247314453125
+      tipo: "tipo"
+      code: "code"
+      fechamuestreo: "fechamuestreo"
+  Message:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+      descripcion:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

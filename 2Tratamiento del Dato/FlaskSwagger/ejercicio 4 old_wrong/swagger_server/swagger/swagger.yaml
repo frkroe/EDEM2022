@@ -1,0 +1,146 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a sample server sensor server for Robots."
+  version: "1.0.0"
+  title: "Swagger Robot Sensor 2.0"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost"
+basePath: "/v2"
+tags:
+- name: "temperature"
+  description: "Everything about your robot temperature measured by sensors"
+schemes:
+- "https"
+- "http"
+paths:
+  /getHistoricalMeassuresBySensorAndType/{sensor}/{start}/{end}:
+    get:
+      tags:
+      - "temperature"
+      summary: "Get last measure from sensor"
+      description: "Get historical measures by sensor and type"
+      operationId: "get_last_measure_by_sensor_and_type"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "sensor"
+        in: "path"
+        description: "name of sensor"
+        required: true
+        type: "string"
+      - name: "start"
+        in: "path"
+        description: "start"
+        required: true
+        type: "string"
+      - name: "end"
+        in: "path"
+        description: "end"
+        required: true
+        type: "string"
+      security:
+      - petstore_auth:
+        - "write:pets"
+        - "read:pets"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Measure"
+        default:
+          description: "Invalid request"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Message"
+      x-swagger-router-controller: "swagger_server.controllers.temperature_controller"
+  /getLastMeassureBySensor/{sensor}:
+    get:
+      tags:
+      - "temperature"
+      summary: "Get last measure from sensor"
+      description: "Jet last measure by sensor."
+      operationId: "get_last_measure_by_sensor"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "sensor"
+        in: "path"
+        description: "name of sensor"
+        required: true
+        type: "string"
+      security:
+      - api_key: []
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Measure"
+        default:
+          description: "Invalid request"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Message"
+      x-swagger-router-controller: "swagger_server.controllers.temperature_controller"
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://petstore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:pets: "modify pets in your account"
+      read:pets: "read your pets"
+    x-tokenInfoFunc: "swagger_server.controllers.authorization_controller.check_petstore_auth"
+    x-scopeValidateFunc: "swagger_server.controllers.authorization_controller.validate_scope_petstore_auth"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+    x-apikeyInfoFunc: "swagger_server.controllers.authorization_controller.check_api_key"
+definitions:
+  Measure:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+      fechamuestreo:
+        type: "string"
+      unidad:
+        type: "string"
+      medicion:
+        type: "number"
+      tipo:
+        type: "string"
+    xml:
+      name: "Measure"
+    example:
+      unidad: "unidad"
+      medicion: 0.80082819046101150206595775671303272247314453125
+      tipo: "tipo"
+      code: "code"
+      fechamuestreo: "fechamuestreo"
+  Message:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+      descripcion:
+        type: "string"
+    xml:
+      name: "Message"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
