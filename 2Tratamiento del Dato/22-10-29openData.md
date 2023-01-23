@@ -48,7 +48,3 @@ de real-time, a través de diario, mensual, etc. a ad-hoc (obtener datos a petic
 - hay de todo, p.ej. RRSS
 - son de pago, pero a lo mejor tienen una versión gratuita
 - IEX Cloud https://iexcloud.io
-
-
-
-

@@ -35,5 +35,3 @@ Dashboard:
 Campos calculados
 - se crear campos calculados con la felchita en la tabla a la izquierda
 - hay una serie de campos calculados recommendados ya hechos por Tableau (abriendo con la flechita a la derecha)
-
-

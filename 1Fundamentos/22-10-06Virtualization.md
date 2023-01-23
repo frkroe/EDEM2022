@@ -82,9 +82,12 @@ scripts para mantener configuraciones y automatizar provisiones de infrastructur
 ejecutar ese con docker abierto!:
 
 todo a la misma vez:
+```
 docker pull ubuntu:20.04 && docker pull ubuntu:18.04 && docker pull ubuntu && docker pull nginx && docker pull fedora && docker pull httpd && docker pull python && docker pull tomcat &&  docker pull mariadb:10.6.4-focal && docker pull wordpress
+```
 
 o indivdualmente:
+```
 docker pull ubuntu 
 docker pull ubuntu:20.04
 docker pull ubuntu:18.04
@@ -95,4 +98,5 @@ docker pull python
 docker pull tomcat
 docker pull mariadb:10.6.4-focal
 docker pull wordpress
+```
 

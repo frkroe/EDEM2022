@@ -1,7 +1,6 @@
 ### Clase de 14/01/23 con Vicent Asensio
 # fever & Airflow
 
-
 ## Arquitectura: 
 ### Tiene 4 partes
 - scheduler: lee y avanza todos los ficheros de DAGs, controla su programación y pasa las tareas al worker
@@ -19,7 +18,7 @@
     - Kubernetes (se crea workers que ejecutan la tarea y después se destruyen)
 
 ## DAG código
-
+```
 from airflow import DAG
 from datetime import datetime
 
@@ -29,6 +28,8 @@ with DAG(
     schedule_time= ..
 
 )
-
+```
 ### DAG Dependencies
+```
 start_task >> log_print >> end_task
+```

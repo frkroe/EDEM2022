@@ -50,9 +50,6 @@
 - FlowFile Processor: la cosa que hace los procesos con los FlowFiles "blackbox"
 - Process Group: conecta los sub-procesos
 
-
-
 ## 3. Proyectos (Success Stories)
-
 
 ## 4. StreamSets

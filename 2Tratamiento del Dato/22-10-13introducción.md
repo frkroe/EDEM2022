@@ -34,4 +34,3 @@ AI:
 2. Información: analizar datos del pasado
 3. Conocimiento: ser capaz de predecir
 4. Sabiduría (=wisdom): generar nuevos productos (beneficiar de datos)
-
