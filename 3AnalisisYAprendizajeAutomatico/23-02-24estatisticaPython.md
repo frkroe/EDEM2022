@@ -110,25 +110,158 @@ import scipy.stats as stats
 La lista de distribuciones disponibles en scipy.stats es la siguiente: [LISTA DE DISTRIBUCIONES EN STATS](https://docs.scipy.org/doc/scipy/reference/stats.html#probability-distributions)
 ```
 #crear una muestra (de 1000 valores entre 0 y 10)
-
 stats.<distribucion>.rvs(size=1000, loc=0, scale=10)
 ``` 
 ```
 #calcular la probabilidad acumulada de la distribución hasta el valor x
-
 stats.<distribucion>.cdf(x, loc=0, scale=10)
 ``` 
 ```
 #calcular el valor de la distribución que corresponde a la probabilidad acumulada q
-
 stats.<distribucion>.ppf(q, loc=0, scale=10)
 ``` 
 ```
 #calcular la probabilidad de la distribución en el valor x
-
 stats.<distribucion>.pdf(x, loc=0, scale=10)
 ``` 
 
 6. Info Material
 - [Más explicaciónes y cursos de Cienca de Datos](https://cienciadedatos.net)
 - [Ajuste de distribuciones: hacer pruebas de qué distribución es la que mejor se ajusta a los datos según su AIC](https://www.cienciadedatos.net/documentos/pystats01-ajuste-distribuciones-python.html)
+
+---
+### Clase del 03/03
+# Estatística con Python (continuación 2)
+
+## Inferencia estadística
+- Hace referencia a obtener conclusiones sobre una población a partir de una muestra de la misma.
+- Distintas formas de hacer inferencia estadística:
+    1. Estimación de parámetros: estimar el valor de un parámetro de la población a partir de la muestra.
+        - puntual
+        - por intervalos
+    2. Contrastes de hipótesis: comparar dos o más parámetros de la población a partir de la muestra.
+        - test de normalidad
+        - t-test con una muestra
+        - t-test con dos muestras independientes
+        - t-test con dos muestras pareadas
+        - test de igualdad de varianzas (homocedasticidad)
+        - prueba de chi-cuadrado (bonedad de ajuste e independencia)
+        - ANOVA
+
+
+
+## 1. Estimación de parámetros: puntual
+Las estimaciones puntuales combinadas con márgenes de error nos permiten crear intervalos de confianza que capturan el parámetro de población real con alta probabilidad.
+```
+# Calcular intervalo de confianza para una estimación puntual media:
+stats.t.interval(alpha = 0.95,              # Confidence level
+                 df= 24,                    # Degrees of freedom
+                 loc = sample_mean,         # Sample mean
+                 scale = sigma)             # Standard deviation estimate
+
+```
+
+```
+# Calcular un intervalo de confianza para una proporción de la población para nosotros
+stats.norm.interval(alpha = 0.95,                    # Confidence level             
+                   loc =  0.192,                     # Point estimate of proportion
+                   scale = math.sqrt((p*(1-p))/n))   # Scaling factor
+
+```
+
+## 2. Contraste de hipótesis
+### Hipótesis nula y alternativa
+El contraste de hipótesis es una técnica estadística que permite evaluar si una hipótesis nula es verdadera o no. [Más info](https://iescastelar.educarex.es/web/departamentos/matematicas/matematicasccss2ba/matematicas2ccss/ttesthipotesis.htm)
+- Hipótesis nula: la hipótesis que se quiere contrastar. Ejemplo: la media de una población es igual a 0.
+- Hipótesis alternativa: la hipótesis que se quiere contrastar. Ejemplo: la media de una población es distinta de 0.
+
+![contraste bilateral (proporción)](https://iescastelar.educarex.es/web/departamentos/matematicas/matematicasccss2ba/matematicas2ccss/imagenes/ttesthipotesisim6.gif)
+
+![contraste unilateral](https://iescastelar.educarex.es/web/departamentos/matematicas/matematicasccss2ba/matematicas2ccss/imagenes/ttesthipotesisim5.gif)
+
+### Errores
+- tipo I: rechazar la hipótesis nula cuando es verdadera.
+- tipo II: no rechazar la hipótesis nula cuando es falsa.
+![errores](https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/EstadisticaProbabilidadInferencia/ContrasteDeHipotesis/4TiposdeErrores/img/TiposErrores.png)
+
+### T-tests
+
+```
+# T-test con una muestra
+stats.ttest_1samp(a= sample_data,            # Sample data
+                  popmean = 0)               # Pop mean
+
+```
+
+```
+# T-test con dos muestras independientes = comparar dos muestras de poblaciones distintas
+stats.ttest_ind(a= sample_data1,
+                b= sample_data2,
+                equal_var=False)    # Assume samples have equal variance?
+```
+
+```
+# T-test con dos muestras apareadas = comparar dos muestras de la misma población en dos momentos distintos
+stats.ttest_rel(a = before,
+                b = after)
+```	
+
+---
+### Clase del 04/03
+# Estatística con Python (continuación 3)
+
+## Comparación de múltiples medias (2+ grupos)
+- condiciones de aplicabilidad:
+    - las poblaciones en los grupos deben seguir una distribución normal
+    - los grupos deben tener la misma varianza (homocedasticidad)
+    - la mustra debe ser aleatoria e independiente
+hay que comporbar si las condiciones se cumplen con los tests anteriores (un test de normalidad y de igualdad de varianzas)
+
+- Hipótesis
+    - H0: todas las medias de los grupos son iguales
+        - p.ej. H0: mu1 = mu2 = mu3
+    - H1: al menos una media de los grupos es diferente
+        - p.ej. H1: mu1 != mu2 != mu3 o mu1 = mu2 != mu3
+
+- Variabilidad de datos: factor clave para comprobar la igualidad de medias
+    - SST: suma de cuadrados totales (varianza total)
+        - formula: SST = SSW + SSG = sum((x - x.mean())**2)
+    - SSW: suma de cuadrados dentro de los grupos (varianza dentro de los grupos)
+        - formula: SSW = sum((x - x.mean())**2)
+    - SSG: suma de cuadrados entre los grupos (varianza entre los grupos)
+        - formula: SSG = sum(n * (x.mean() - x_global.mean())**2)
+    
+- ANOVA: análisis de varianza 
+    - Objetivo: La prueba ANOVA nos permite comprobar si una variable de respuesta numérica varía según los grupos de una variable categórica.
+    - Hipótesis
+        - H0: todas las medias de los grupos son iguales
+        - H1: al menos una media de los grupos es diferente
+    - F-statistic: estadístico del test
+        - formula: F = MSG/MSW = (SSG / (k - 1)) / (SSW / (n - k))
+            - k: número de grupos
+            - n: tamaño de la muestra
+    - Decicion rule: rechazar H0 si F > F_critico
+        - F_critico: valor crítico de F para un nivel de significancia alpha y k-1 grados de libertad
+            - p.ej. F_critico = stats.f.ppf(q = 1 - alpha, dfn = k - 1, dfd = n - k)
+
+        ![F-critico](https://saylordotorg.github.io/text_introductory-statistics/section_15/0cebffc666cda270843e897188456909.jpg)
+    - Tabla de ANOVA:
+    ![tabla ANOVA](http://www.conexionismo.com/doc/analisis_varianza_1f/tabla1_anova.jpg)
+    | Source of variation | SS Sum of squares | df Degrees of freedom | MS Mean square | f-ratio F statistic |
+    | --- | --- | --- | --- | --- |
+    | Between groups | SSG  | k-1 | MSG = SSG/(k-1) | F = MSG/MSW = (SSG/(k-1)) / (SSW/(n-k)) |
+    | Within groups | SSW | n-1 | MSW = SSW/(n-k)|  |
+    | Total | SST = SSG+SSW | n-1 |  |  |
+
+## En Python
+```
+# test ANOVA
+stats.f_oneway(group1, group2, group3)
+
+
+#  prueba post-hoc (prueba t separada para cada par de grupos)
+stats.ttest_ind(group1, group2)
+
+# prueba post-hoc (prueba turkey)
+stats.tukeyhsd(endog=data, groups=groups, alpha=0.05)
+```
