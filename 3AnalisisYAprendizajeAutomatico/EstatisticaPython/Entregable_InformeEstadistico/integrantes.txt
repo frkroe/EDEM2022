@@ -1,0 +1,4 @@
+Análisis y Aprendizaje Automático
+Entregable: Informe Estadístico con Python
+
+Marina Pérez Barber y Franziska Sophie Kröger
