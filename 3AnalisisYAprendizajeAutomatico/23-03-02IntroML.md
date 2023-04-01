@@ -106,10 +106,9 @@ Machine Learning es una rama de la inteligencia artificial cuyo objetivo es cons
 - el modelo se centre más en variables con una escala más alta: se debe escalar las variables a la misma escala
 - opciones:
     - escalar a media cero y desviación estándar 1 (más popular)
-    - escalar a un rango de 0 a 1 (min-max scaling)
-
+    - escalar con min-max scaling a un rango de 0 a 1
 ### Redundancia/ Irrelevancia de variables
-- Eliminar variables redundantes (correlación con otros variablas predictoras superior a un umbral particular, p.ej. 0.99)
+- Eliminar variables redundantes (correlación con otros variablas predictoras superior a un umbral particular, p.ej. 0.99) 
 - Eliminar variables irrelevantes (correlación con el target inferior a un umbral particular, p.ej. 0.01)
 
 ### Variable Importance
@@ -120,7 +119,7 @@ Machine Learning es una rama de la inteligencia artificial cuyo objetivo es cons
     - correlación con el target
     - variación en rendimiento del modelo al eliminar la variable (ablation)
     - variación en rendimiento del modelo al permutuar los valores de la variable 
-    - modelos univariables
+    - modelos univariantes
 
 ### Weighting
 - Objetivo: dar más peso a las variables más importantes
