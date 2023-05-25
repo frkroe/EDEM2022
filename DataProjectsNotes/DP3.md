@@ -5,13 +5,13 @@
 
 # Detección de enfermedad cardiaca
 
-## metodología
+## Metodología
 - por pareja
 - por 3 semanas
     - entrega en kaggle el 3 de mayo 23:59
 - 10 min de presentación + 5 min de feedback
 
-## evaluación
+## Evaluación
 Competición entre nosotros mismos
 
 - originalidad
