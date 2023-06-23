@@ -1,0 +1,8 @@
+{
+    "name": "iris-rf",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "model.pkl",
+        "version": "v0.1.0"
+    }
+}

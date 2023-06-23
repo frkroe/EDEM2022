@@ -1,0 +1,8 @@
+{
+    "name": "iris-rf-custom",
+    "implementation": "models.customModel",
+    "parameters": {
+        "uri": "../../model.pkl",
+        "version": "v0.1.0"
+    }
+}
