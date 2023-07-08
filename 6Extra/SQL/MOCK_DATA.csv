@@ -1,0 +1,101 @@
+StudentID,FirstName,LastName,BirthDate,Telephone,Street,PostalCode,City,DNI,Gender
+1,Clarke,Bru,1965-04-02,5406211542,5397 Ludington Way,,Librazhd-Qendër,571720305,Male
+2,Rose,Gathwaite,1962-12-31,1955241247,2202 Florence Crossing,H4R,Chase,825367932,Female
+3,Des,Preon,1995-06-20,4059011163,240 Anderson Plaza,73119,Oklahoma City,104277551,Male
+4,Cecil,Sandeford,1998-02-23,4181627807,27618 Oakridge Place,683 01,Rousínov,260168158,Female
+5,Elfreda,Perillo,1996-02-14,9584203729,51 Service Center,,Guodu,220312471,Female
+6,Germain,Lammas,1974-10-12,7578608632,7 Delaware Plaza,1536,Moss,909309820,Female
+7,Vernon,Zanelli,1985-08-14,4771836419,1439 Hooker Park,,Houmen,918546822,Male
+8,Ike,Deniscke,2001-02-03,7383242803,00666 Bartelt Trail,4650-071,Fojo,315311779,Male
+9,Melvyn,Gittoes,1990-01-08,8455130149,4 Dryden Way,39-333,Sarnów,466134017,Agender
+10,Jeremias,Curd,2006-07-10,3519431480,38 Lyons Trail,,Xiaoruo,274080213,Male
+11,Oona,Pigott,1976-10-13,3192447260,96493 Gina Junction,4520-525,Sanfins,627349422,Female
+12,Phil,Shall,1961-10-28,6394814964,4 Sutherland Center,31210,Nong Ki,779879675,Male
+13,Aubrie,Godbehere,2006-06-08,2123115935,6563 Lakewood Gardens Avenue,10184,New York City,752916590,Female
+14,Sunny,Ranyelld,1972-01-02,6042966333,3297 Hermina Way,36210,Nong Bua Daeng,252386283,Polygender
+15,Yancy,Bywater,2005-03-15,4089149667,8157 Buell Junction,,Kampala,679301967,Male
+16,Fairlie,Inchan,2005-02-18,1498398727,5186 Prairie Rose Way,2201,Iba,365786238,Male
+17,Marleah,Catterell,1991-08-29,8644769875,067 Independence Center,,Pagak,162986931,Female
+18,Nev,Pesterfield,1960-12-17,4942976175,137 Gale Plaza,,Artemisa,517538132,Male
+19,Jenine,Latta,2006-03-04,8601612577,560 Sugar Street,,Somba,558411106,Female
+20,Antoine,Lyard,2005-09-01,1701947265,50130 Prentice Way,,Krajan,512955017,Male
+21,Sayers,Pickthall,1978-09-09,4951935334,6 Crest Line Plaza,,Kuleqi,330198202,Male
+22,Micki,Haughin,1972-05-08,4562981547,6131 Saint Paul Lane,,Biqiao,429556636,Genderfluid
+23,Alex,Swancott,1994-04-09,4769300895,5838 Longview Drive,,Toutai,667834766,Male
+24,Bryon,Fist,2003-04-25,9479202023,27 Schurz Junction,364 61,Město,175006391,Genderqueer
+25,Isidro,Luckwell,1964-03-02,3556431439,8373 Holmberg Way,,Klek,406934779,Male
+26,Khalil,Polglaze,1989-03-05,3983796185,780 Fallview Parkway,4221,Mendez-Nuñez,724725920,Male
+27,Abdul,Busher,2008-09-11,5546364023,307 Cambridge Park,,Dahao,774199744,Male
+28,Lovell,McAree,2012-05-20,9143091876,4111 Norway Maple Court,,Cayara,188994706,Male
+29,Olenolin,MacRorie,2009-09-26,7322492962,8 Havey Way,871 60,Härnösand,374231097,Male
+30,Booth,Seaton,1988-02-10,3553975661,896 Portage Avenue,,Kamwenge,541502086,Male
+31,Margaux,Pain,1964-03-24,6172002269,69 Blue Bill Park Plaza,,Yuquan,507456826,Female
+32,Sunny,Redsall,1976-07-11,2629127932,42355 Rowland Center,68500-000,Marabá,498053064,Male
+33,Rodney,Barfford,1969-12-01,6706036345,21059 Fair Oaks Court,4611,Amuñgan,748653484,Male
+34,Vanna,Kenealy,1968-01-14,9607549774,29 Jay Point,75600-000,Goiatuba,922184969,Female
+35,Lucinda,Konneke,2001-04-18,7034969186,37 Farmco Lane,,Shipu,272613510,Female
+36,Maggy,Shires,2007-08-13,6893342236,25567 Daystar Pass,,Panjāb,659616593,Female
+37,Claribel,Mapis,1983-12-01,6862881656,961 Bonner Circle,39209 CEDEX,Saint-Claude,788310225,Female
+38,Traci,Cullinane,1989-09-19,4198851197,20456 Prentice Lane,,Thakhèk,128342667,Female
+39,Craggy,Doughtery,1982-01-15,6813729064,8 Briar Crest Way,,Krian,732708456,Male
+40,Ignacius,Squibe,2004-07-28,2135081067,4 Dapin Court,90055,Los Angeles,613164025,Male
+41,Donavon,Dillamore,2004-08-07,5446096295,527 3rd Alley,97171 CEDEX,Pointe-à-Pitre,590993788,Male
+42,Dov,Poulson,1962-12-15,3049036234,07839 Spaight Trail,,Barice,100909481,Male
+43,Faustina,McGrowther,1968-11-12,7788987878,7571 Riverside Street,,Karangbenda,817374480,Female
+44,Jobyna,Bastide,1973-05-06,8244145028,40590 Wayridge Park,,Ḩabūr,263310676,Female
+45,Rosmunda,Coburn,1992-01-29,2136883861,63365 Lukken Terrace,,Hongchun,236318376,Female
+46,Stevana,Moutray Read,1995-03-23,1552356870,24 Buell Point,,El Corozo,128448597,Female
+47,Riley,Longstaff,1973-06-06,5457545746,0 Norway Maple Avenue,,Bayan Hot,651100138,Male
+48,Gabbie,Danovich,2009-07-08,8108673437,10 Quincy Road,,Yosowilangun,975921181,Male
+49,Shermy,Snarr,1980-07-27,4174788972,80 Messerschmidt Alley,,Karara,286295034,Male
+50,Danit,Smitheman,1965-01-31,8747410833,2933 Morrow Way,5100-005,Lamego,644122991,Polygender
+51,Aurel,Trotter,2001-06-22,7399874802,6689 Tony Park,423 43,Torslanda,358582604,Female
+52,Alfonse,Dmitrovic,1969-01-06,4029237635,42980 7th Center,2500,Cañada de Gómez,963440481,Male
+53,Margarete,Laytham,1962-06-06,1889462341,61265 Amoth Center,,Jinquan,310272083,Non-binary
+54,Sydel,Joslow,1968-10-07,2149835347,03557 Packers Terrace,,Fumin,879516584,Female
+55,Cynde,Arran,1989-06-28,8831187818,338 Oriole Center,,Boulemane,963565680,Female
+56,Carolyne,Jackett,2000-10-14,6154122071,1 Dunning Way,186445,Novorozhdestvenskaya,898762031,Female
+57,Chadd,Bladon,2005-11-04,8714431311,40029 Surrey Center,601340,Novki,225288039,Male
+58,Parry,Rewcassell,1988-04-22,8527977218,049 Kenwood Circle,,Sambong,931442595,Male
+59,Bartholomeo,Quarlis,2009-05-29,8298929758,02694 Westridge Road,,Chervonoarmiys’k,303388769,Male
+60,Gayla,Antoszczyk,1997-11-18,9544334632,29067 Fairview Point,95150-000,Nova Petrópolis,827839819,Female
+61,Loy,Kibard,1972-12-03,4686976751,81045 Oxford Drive,,Jiangnan,631533771,Male
+62,Hayes,Piesing,1998-08-12,8513951387,31139 Swallow Center,,Thomazeau,485934638,Male
+63,Koressa,Creavin,1985-08-11,3181681969,25 Reindahl Street,,Basoko,649154050,Female
+64,Aubert,Clacson,1961-04-06,9745871646,771 Pennsylvania Alley,696 61,Vnorovy,736396952,Bigender
+65,Tyrone,Lukesch,2003-01-23,4327735817,46922 Cordelia Trail,,Lundo,670383749,Male
+66,Angelica,Seear,2006-04-18,1411051910,6818 Blaine Terrace,,Lebao,897790747,Female
+67,Feodora,Edmundson,1979-02-05,4457373184,4 Vernon Plaza,,Oehala,627924250,Female
+68,Harcourt,Tate,2006-06-23,2998772068,52593 Merrick Center,692658,Lyalichi,880498188,Male
+69,Munmro,Janway,1988-07-12,2821060571,864 Moulton Plaza,,Shiqiao,968459317,Male
+70,Vinita,Kenward,1966-05-05,1753782728,6 Cherokee Terrace,8019,Zwolle,894967670,Female
+71,Bartlet,Hatwells,1961-03-06,4097539661,8 Acker Circle,,Nanshui,436262973,Male
+72,Gerri,Whenman,1961-08-10,5732426229,053 Gerald Park,65211,Columbia,231324262,Female
+73,Tate,Engall,1983-02-24,5324456751,554 Transport Park,,Takāb,779850813,Male
+74,Orlan,Spinello,1993-10-15,7975755884,09 Onsgard Court,,Yagoua,722350851,Male
+75,Skipp,Torrent,2006-12-28,8423146099,644 Johnson Center,93209 CEDEX,Saint-Denis,920324673,Male
+76,Marilin,Petticrew,1990-09-20,2356602048,4708 Helena Circle,22005,Huesca,950781136,Female
+77,Athena,Canelas,1961-04-18,2184128277,479 Swallow Alley,4940-025,Gandra,832727212,Female
+78,Siward,Galpen,1960-01-27,4668031731,6061 Summit Street,5730,Fort Beaufort,757857730,Male
+79,Ludvig,Sime,1967-12-14,9109978631,60 Grover Pass,,Amgalang,602484990,Male
+80,Crysta,Sedgefield,1964-12-14,8037231572,01276 Oakridge Place,8422,Silae,715263589,Female
+81,Mallory,Roj,2007-09-11,9506978439,81 Shelley Court,,Khorramābād,919764070,Male
+82,Bonny,Sirkett,1988-04-05,2306501171,73501 Fieldstone Park,18130,Ban Mo,546551856,Female
+83,Zena,Formigli,2003-12-04,4066670331,68 Eastwood Alley,76200-000,Iporá,521149832,Female
+84,Teddy,Tite,1967-05-05,4447301061,637 Holy Cross Center,10801,Jarabacoa,765543761,Female
+85,Earlie,Yakovl,2000-04-25,9435782888,2732 Arizona Parkway,,Chichigalpa,226055644,Male
+86,Alisa,Challens,2003-04-08,6382147745,4289 Namekagon Place,,Shahe,949062739,Female
+87,Shana,Climer,1997-05-08,4985700489,77 Eggendart Street,,Jixing,268993061,Genderqueer
+88,Fairfax,Stanners,1971-01-01,7625440020,3 Swallow Park,04501,Suodenniemi,580628717,Male
+89,Ephraim,Minchella,1996-04-19,5288774926,5 Coolidge Avenue,,Danzi,666938797,Male
+90,Tedie,McCulley,1975-03-30,1802130252,945 Golf View Trail,,Shijia,869436066,Male
+91,Eden,Shrieves,1980-05-08,1191836167,4597 American Ash Drive,646160,Lyubinskiy,806058558,Female
+92,Fabien,Atty,1997-05-18,4426905750,8402 Fairfield Park,7803,Hobart,164948133,Male
+93,Abbie,Jakoviljevic,1996-10-19,4323967652,0325 Transport Plaza,,Pas Pul,259089030,Female
+94,Jayne,Wildman,1966-11-28,5995356498,13514 Columbus Alley,3320,Kaligutan,317883268,Female
+95,Andrey,Doreward,1994-12-09,1107899286,658 Warbler Crossing,,Taokeng,914971029,Male
+96,Giacinta,Goodread,2001-03-06,9557481987,42 Packers Park,,Gitega,196176355,Female
+97,Yankee,Creed,1990-08-16,1552728704,6526 Riverside Plaza,,Taocun,638564446,Male
+98,Marthena,Thurber,1967-12-26,1332170408,12 Jana Way,30935 CEDEX 9,Nîmes,975503328,Polygender
+99,Luelle,Tohill,1978-09-19,9075631662,98405 Pond Circle,4620-280,Longra,224828271,Female
+100,Thomasin,Siehard,1981-02-05,3912207630,27574 Steensland Junction,75280 CEDEX 06,Paris 06,285737066,Female
